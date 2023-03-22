@@ -1,0 +1,150 @@
+:root{
+    --color_one: rgb(255, 255, 255);
+    --color_two: rgb(242, 242, 242);
+    --color_three: #2242C7;
+	--color_four: #62FBD4;
+	--color_five: #00C19D;
+	--color_six: #008B6A;
+    --nav_offset: 60px;
+    --transparent_white: rgba(255, 255, 255, .75);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+section{
+    width: 100vw;
+}
+
+header, main, footer{
+    padding: 50px 25px;
+}
+
+.all_caps{
+    text-transform: uppercase;
+}
+
+.mini_icon{
+    width: auto;
+    height: 17px;
+}
+.sm_icon{
+    width: 23px;
+    height: auto;
+    padding: 10px;
+}
+
+.md_icon{
+    width: 30px;
+    height: auto;
+}
+.lg_icon{
+    width: 50px;
+    height: auto;
+}
+.btn_cta{
+    border: 2px solid var(--color_five);
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--color_five);
+}
+
+.btn_cta:hover{
+    background-color: var(--color_five);
+    color: var(--color_one);
+}
+
+/* Navigation Menu */
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.btn_nav{
+    width: 100vw;
+    height: var(--nav_offset);
+    background-color: var(--color_four);
+    border: none;
+    font-weight: bold;
+    margin: 0px;
+}
+.btn_nav:hover{
+    background-color: var(--color_five);
+    color: black;
+    font-weight: bold;
+}
+.nav--menu{
+    display: none;
+}
+.show{
+    display: block;
+    background-color: var(--color_one);
+}
+.nav_list{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+.nav_list--item{
+    padding: 8px 0px;
+}
+.nav_list--item:hover{
+    background-color: var(--color_two);
+}
+.nav_list--link{
+    text-decoration: none;
+    color: var(--color_three);
+    font-weight: bold;
+}
+.icon_rotate{
+    transition: transform 1s;
+}
+.icon_rotate:hover{
+    transform: rotate(90deg);
+}
+
+/* Header */
+.top_offset{
+    margin-top: var(--nav_offset);
+}
+header{
+    background: linear-gradient(to top, var(--color_one), var(--transparent_white)), url("/static/data_analysis.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+.site_info{
+    padding: 50px 0px 0px 0px;
+}
+.ds_logo{
+    width: 100px;
+    height: auto;
+}
+.site_info--CTA{
+    padding-top: 40px;
+}
+
+/* Intro/Main Content */
+main{
+    background-color: var(--color_one);
+}
+.contact--cta{
+    padding-top: 25px;
+}
+.head_shot{
+    border-radius: 100px;
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+footer{
+    background-color: var(--color_two);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta-Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site-Title -->
+    <title>Mike Files</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <section>
+        <nav>
+            <div class="nav--icon">
+                <button onclick="toggleMenu()" class="all_caps btn_nav">
+                    <img src="{{ url_for('static', filename='icon_compass.svg') }}" class="md_icon icon_rotate">
+                </button>
+            </div>
+            <div id="navMenu" class="nav--menu">
+                <ul class="nav_list">
+                    <li class="nav_list--item">
+                        <a class="nav_list--link all_caps" href="#intro">
+                            Intro
+                        </a>
+                    </li>
+                    <!-- <li class="nav_list--item">
+                        <a class="nav_list--link all_caps" href="#services">
+                            Services
+                        </a>
+                    </li> -->
+                    <li class="nav_list--item">
+                        <a class="nav_list--link all_caps" href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_list--item">
+                        <a class="nav_list--link all_caps" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>                  
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header -->
+    <section class="top_offset">
+        <header>
+            <div class="site_info">
+                <div class="site_info--logo">
+                    <img src="{{ url_for('static', filename='ds_logo.svg') }}" class="ds_logo">
+                </div>
+                <div class="site_info--label">
+                    <h1>
+                        Mike Files
+                    </h1>
+                </div>
+                <div class="site_info--description">
+                    <p>
+                        Welcome to Mike Files' homepage.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores assumenda rem quae similique. Laborum quibusdam in, dolor cupiditate ratione similique!
+                    </p>
+                </div>
+                <div class="site_info--CTA">
+                    <a href="#contact" class="btn_cta all_caps">Contact</a>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Intro/Main Content -->
+    <section>
+        <main>
+            <div id="intro">
+                <div class="intro--image">
+                    <img src="{{ url_for('static', filename='head_shot.jpg') }}" class="head_shot">
+                </div>
+                <div class="intro--description">
+                    <p>
+                        Hi, I'm Mike.
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere asperiores, ea, accusantium nostrum labore tenetur consectetur voluptate unde rem quo aperiam, magnam suscipit mollitia consequuntur cupiditate possimus ipsum laborum dolor!
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit quas magni in consequatur consectetur cum aspernatur voluptatibus facere dolorem.
+                    </p>                    
+                </div>
+            </div>
+            <div id="portfolio">
+                <div class="portfolio--title all_caps">
+                    <h2>
+                        Portfolio
+                    </h2>
+                </div>
+                <div class="portfolio--card">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nam? Sequi facilis reprehenderit autem in alias eaque ad veritatis sed, ipsa quam, eveniet ab ullam enim neque voluptate vero repudiandae debitis modi! Quis sit at, ullam magnam eius sequi quaerat, magni consectetur sapiente fuga iure ipsum obcaecati dicta cum, temporibus necessitatibus ex unde. Quidem a asperiores aliquid doloremque officia sed soluta doloribus aspernatur magni quis. Beatae repudiandae harum voluptates cumque delectus. Qui possimus, quod quasi quo saepe necessitatibus impedit praesentium modi. Alias totam obcaecati, sed iure enim veniam officia itaque dolorem blanditiis aliquam ipsa nostrum quos quidem, consequatur maxime laudantium!
+                    </p>                    
+                </div>
+            </div>
+            <div id="contact">
+                <div class="contact--title all_caps">
+                    <h2>
+                        Contact
+                    </h2>
+                </div>
+                <div class="contact--description">
+                    <p>
+                        Feel free to connect with me on LinkedIn. Otherwise, please contact me at <a href="mailto:mike@mike-files.com">mike@mike-files.com</a>.
+                    </p>                    
+                </div>
+                <div class="contact--cta">
+                    <a href="https://www.linkedin.com/in/mlfiles/" class="btn_cta all_caps" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/mkefiles" class="btn_cta all_caps" target="_blank">GitHub</a>
+                    <a href="mailto:mike@mike-files.com" class="btn_cta all_caps">Mail</a>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <footer>
+            <div class="site_foot">
+                <div class="site_foot--logos">
+                    <img src="{{ url_for('static', filename='ds_logo.svg') }}" class="lg_icon">
+                    <br>
+                    <a href="https://www.linkedin.com/in/mlfiles/" target="_blank"><img src="{{ url_for('static', filename='icon_linkedin.svg') }}" class="sm_icon"></a>
+                    <a href="https://github.com/mkefiles" target="_blank"><img src="{{ url_for('static', filename='icon_github.svg') }}" class="sm_icon"></a>
+                </div>
+                <div class="site_foot--text">
+                    <p>
+                        Hand-coded with
+                        <img src="{{ url_for('static', filename='foot_html.svg') }}" class="mini_icon">, 
+                        <img src="{{ url_for('static', filename='foot_css.svg') }}" class="mini_icon">, 
+                        <img src="{{ url_for('static', filename='foot_js.svg') }}" class="mini_icon">, 
+                        <img src="{{ url_for('static', filename='foot_python.svg') }}" class="mini_icon">, oh and some 
+                        <img src="{{ url_for('static', filename='foot_mug.svg') }}" class="mini_icon">
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="{{url_for('static', filename='scripts.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Files</title>
+</head>
+<body onload="redirect()">
+    <h1>Wrong page!</h1>
+    <p id="pageInfo"></p>
+    <script lang="JavaScript" type="text/javascript">
+        // create a site-redirect
+        var seconds = 6;
+        var url="{{url_for('home')}}";
+
+        function redirect(){
+            if (seconds <=0){
+                window.location = url;
+            } else {
+                seconds--;
+                document.getElementById("pageInfo").innerHTML="Redirecting to Home Page after " + seconds + " seconds."
+                setTimeout("redirect()", 1000)
+            }
+        }
+    </script>
+</body>
+</html>
